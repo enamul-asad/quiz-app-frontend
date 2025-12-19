@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/dashboard/Sidebar';
 import Header from '../components/dashboard/Header';
+import Footer from '../components/dashboard/Footer';
 
 const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -31,6 +32,7 @@ const DashboardLayout = () => {
         <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 dark:bg-gray-900 p-6">
             {/* 'Outlet' is where the child routes (Leaderboard, Home, etc.) will appear */}
             <Outlet />
+      <Footer/>
         </main>
       </div>
     </div>
