@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-transparent dark:bg-gray-900  border-gray-200 dark:border-gray-800 pt-3 mt-10">
+    <footer className="bg-transparent dark:bg-gray-900  border-gray-200 dark:border-gray-800 py-3 mt-5 ">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Left Side: Copyright */}
@@ -18,7 +18,7 @@ const Footer = () => {
           <FaCode className="text-[#512da8]" />
           <span>Developed by</span>
           <a 
-            href="#" // Add your portfolio link here if you have one
+            href="https://enamulportfolio.netlify.app/" // Add your portfolio link here if you have one
             className="text-[#512da8] font-bold hover:underline decoration-2 underline-offset-4"
           >
             Enamulhaq
