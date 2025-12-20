@@ -10,7 +10,7 @@ const Footer = () => {
         
         {/* Left Side: Copyright */}
         <div className="text-sm text-gray-500 dark:text-gray-400">
-          &copy; {currentYear} QuizMaster. All rights reserved.
+          &copy; {currentYear} QuizApp. All rights reserved.
         </div>
 
         {/* Center: Developed By */}
