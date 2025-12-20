@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaClock, FaCheckCircle, FaExclamationTriangle, FaListAlt, FaShieldAlt } from 'react-icons/fa';
 import { useNavigate, useParams } from 'react-router-dom';
 import api from '../services/api';
+import Footer from '../components/dashboard/Footer';
 
 const QuizPage = () => {
     const { id } = useParams(); // Get Quiz ID from URL
@@ -91,7 +92,7 @@ const QuizPage = () => {
 
     const handleSubmitQuiz = async () => {
         // Guard clause: Prevent double submissions
-        if (loading && quizData) return; 
+        if (loading && quizData) return;
 
         try {
             setLoading(true); // Disable button & show spinner
@@ -144,6 +145,7 @@ const QuizPage = () => {
                         ))}
                     </div>
                 </div>
+                <Footer/>
             </div>
         );
     }
@@ -245,15 +247,15 @@ const QuizPage = () => {
                     {/* Controls */}
                     <div className="mt-6 flex justify-between">
                         <button disabled={currentQuestionIndex === 0} onClick={() => setCurrentQuestionIndex(prev => prev - 1)} className="px-6 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 disabled:opacity-50 hover:bg-gray-300 transition">Previous</button>
-                        
+
                         {currentQuestionIndex === quizData.questions.length - 1 ? (
                             // --- SUBMIT BUTTON WITH LOADING STATE ---
-                            <button 
-                                onClick={handleSubmitQuiz} 
-                                disabled={loading} 
+                            <button
+                                onClick={handleSubmitQuiz}
+                                disabled={loading}
                                 className={`px-6 py-2 rounded-lg text-white font-bold transition shadow-lg 
-                                    ${loading 
-                                        ? 'bg-green-400 cursor-not-allowed shadow-none' 
+                                    ${loading
+                                        ? 'bg-green-400 cursor-not-allowed shadow-none'
                                         : 'bg-green-600 hover:bg-green-700 shadow-green-500/30'
                                     }`}
                             >
@@ -303,6 +305,7 @@ const QuizPage = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };
