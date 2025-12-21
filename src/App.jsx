@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Auth from './pages/Auth'; // Your Login/Register Page
-import DashboardLayout from './layout/DashboardLayout'; // We will create this wrapper
+import Auth from './pages/Auth'; 
+import DashboardLayout from './layout/DashboardLayout'; 
 import Dashboard from './pages/Dashboard';
 import Leaderboard from './components/dashboard/Leaderboard';
 import HistorySection from './components/dashboard/HistorySection';

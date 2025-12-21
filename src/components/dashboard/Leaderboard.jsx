@@ -49,7 +49,7 @@ const Leaderboard = () => {
                                 <span className="text-[10px] md:text-xs text-white font-bold opacity-80 mt-1">Silver</span>
                             </div>
                             <p className="mt-2 font-bold text-gray-700 dark:text-gray-300 text-xs md:text-sm truncate w-full text-center">{topThree[1].username}</p>
-                            <span className="text-[10px] md:text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-[#512da8] font-bold">{topThree[1].score} pts</span>
+                            <span className="text-[10px] md:text-xs bg-gray-100  px-2 py-0.5 rounded text-[#512da8] font-bold">{topThree[1].score} pts</span>
                         </div>
                     )}
 
@@ -80,7 +80,7 @@ const Leaderboard = () => {
                                 <span className="text-[10px] md:text-xs text-white font-bold opacity-80 mt-1">Bronze</span>
                             </div>
                             <p className="mt-2 font-bold text-gray-700 dark:text-gray-300 text-xs md:text-sm truncate w-full text-center">{topThree[2].username}</p>
-                            <span className="text-[10px] md:text-xs bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded text-[#512da8] font-bold">{topThree[2].score} pts</span>
+                            <span className="text-[10px] md:text-xs bg-gray-100 dark:bg-white-700 px-2 py-0.5 rounded text-[#512da8] font-bold">{topThree[2].score} pts</span>
                         </div>
                     )}
                 </div>
